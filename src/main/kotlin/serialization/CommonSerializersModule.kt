@@ -1,7 +1,9 @@
 package zooucat.serialization
 
 import kotlinx.serialization.modules.SerializersModule
+import kotlinx.serialization.modules.contextual
 import java.math.BigDecimal
+import java.util.Currency
 
 /**
  * A shared [SerializersModule] that registers commonly used serializers across the application.
@@ -22,4 +24,5 @@ import java.math.BigDecimal
  */
 val CommonSerializersModule = SerializersModule {
     contextual(BigDecimal::class, BigDecimalSerializer)
+    contextual(Currency::class, CurrencySerializer)
 }
