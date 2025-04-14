@@ -1,7 +1,6 @@
 package zooucat.serialization
 
 import kotlinx.serialization.modules.SerializersModule
-import kotlinx.serialization.modules.contextual
 import java.math.BigDecimal
 import java.util.Currency
 
